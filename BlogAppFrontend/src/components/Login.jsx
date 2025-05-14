@@ -13,7 +13,7 @@ const Login = () => {
   function capValue(e){
       e.preventDefault();
 
-    axios.post('/user/login', form)
+    axios.post('/api/user/login', form)
       .then((res) => {
       alert(res.data.message)
       if(res.data.jtoken){
